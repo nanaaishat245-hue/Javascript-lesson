@@ -1,0 +1,11 @@
+body{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60vh ;
+}
+
+h4{
+    color: chocolate;
+}
