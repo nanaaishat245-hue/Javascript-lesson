@@ -123,7 +123,7 @@ multiple(2, 3)
 //  Arrow functions are not hoisted. They must be defined before they are called.
 
 // FUNCTION EXPRESSSION:are not hoisted in the same way as declarations.
-//  Only the variable holding the function ishoisted, not the function itself.
+//  Only the variable holding the function is hoisted, not the function itself.
 //  They can only be invoked after the line where they are defined.
 
 // DECLARARION : Function declarations are hoisted, 

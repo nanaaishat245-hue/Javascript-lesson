@@ -155,3 +155,17 @@ function printFullName (){
       return fullName
 }
 console.log(printFullName())
+
+
+
+
+
+
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
