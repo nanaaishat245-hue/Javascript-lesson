@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Element</title>
+</head>
+<body>
+   <h1>DOM second class</h1>
+<!-- <p id="message">Lorem ipsum dolor</p> -->
+<button onclick="changeText()">Click Me</button>
+
+<!-- <h2 id="title">Welcome</h2> -->
+<h3 id="title">Hover over me</h3>
+<p class="note">This is a note</p>
+<p>This is another paragraph</p>
+
+<img id="myImage" src="https://tinyurl.com/2snwhn69" alt="" width="200">
+<button onclick="switchImage">Switch image</button>
+
+
+
+
+     <script>
+     function switchImage(){
+        let img = document.getElementById("myImage")
+
+        img.setAttribute("src", "https://tinyurl.com/4n894fpr" )
+        img.style.border = "5px solid green"
+        img.classList.add("active")
+     }
+    //  mouse over
+     let title = document.getElementById("title")
+     title.addEventListener("mouseover", function(){
+        title.textContent = "you hovered over me!"
+        title.style.color = "blue"
+     })
+     
+    //    mouseout
+     title.addEventListener("mouseout", function(){
+        title.textContent = "Hovered over me!"
+        title.style.color = "black"
+     })
+
+
+
+
+
+
+        console.log(document.title); //Accessing the Dom title
+        console.log(document.body); // accessing body element
+
+     function changeText() {
+       document.getElementById("message").textContent = "You click button!"
+     }
+     
+     let byId = document.getElementById("title")
+     console.log(byId.textContent);
+
+
+     let byClass = document.getElementsByClassName("note")[0]
+     console.log(byClass.textContent);
+
+
+     let byTag = document.getElementsByTagName("p")[1]
+     console.log(byTag.textContent);
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

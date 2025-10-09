@@ -1,6 +1,7 @@
-// DOM : doucument object model.
+// DOM : document object model.
 // dom is a programming interface that repreent the structure of a webpage so
-//  that programming language (e.g) can interact with it.
+//  that programming language (e.g) can interact with it. OR when browser represent html page as a three structure 
+// i.e paragraph, h1 ,h2.
 
     //  getElementById : Unique to the first one only
     //  getElementByClassName : 
@@ -64,11 +65,6 @@ selectAll[1].textContent = 'her'
 selectAll[2].textContent = 'you' 
 
 selectAll.forEach(con => con.style.color = 'blue')
-
-
-
-
-
 
 
 

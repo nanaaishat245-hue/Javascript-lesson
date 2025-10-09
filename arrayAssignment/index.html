@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+</head>
+<body>
+    <!-- Q5 -->
+    <ul id="taskList"></ul>
+
+  <script>
+    let tasks = ["Learn JS", "Practice DOM", "Build Project"];
+
+    function renderTasks(arr) {
+      const ul = document.getElementById("taskList");
+      ul.innerHTML = "";
+
+      arr.forEach(task => {
+        const li = document.createElement("li"); 
+        li.textContent = task;                  
+        ul.appendChild(li);                      
+      });
+    }
+
+    renderTasks(tasks);
+    </script>
+
+    <table id="studentTable" border="1"></table>
+       
+          
+    <script src="script.js"></script>
+</body>
+</html>
